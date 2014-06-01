@@ -1,0 +1,118 @@
+@-webkit-keyframes flipInX { 
+  0% { -webkit-transform: perspective(400px) rotateX(90deg); opacity: 0; }
+  40% { -webkit-transform: perspective(400px) rotateX(-10deg); }
+  70% { -webkit-transform: perspective(400px) rotateX(10deg); }
+  100% { -webkit-transform: perspective(400px) rotateX(0deg); opacity: 1; }
+}
+
+@-webkit-keyframes fadeInLeft { 
+  0% { opacity: 0; -webkit-transform: translateX(-200px); }
+  100% { opacity: 1; -webkit-transform: translateX(0px); }
+}
+
+@-webkit-keyframes lightSpeedIn { 
+  0% { -webkit-transform: translateX(100%) skewX(-30deg); opacity: 0; }
+  60% { -webkit-transform: translateX(-20%) skewX(30deg); opacity: 1; }
+  80% { -webkit-transform: translateX(0%) skewX(-15deg); opacity: 1; }
+  100% { -webkit-transform: translateX(0%) skewX(0deg); opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn { 
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.top img{
+	position: relative;
+	-webkit-animation: lightSpeedIn 2s ease 1s both;
+}
+
+.top span{
+	position: relative;
+	-webkit-animation: fadeIn 2s ease 1s both;
+	/*-webkit-animation-name: fadeIn;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-fill-mode: both;
+	-webkit-animation-delay: 1s;*/
+}
+
+.acess{
+	position: relative;
+	-webkit-animation: flipInX 2s ease 1s both;
+}
+/*
+.buttons #bt1 i, .buttons #bt2 i, .buttons #bt3 i, .buttons #bt4 i{
+	position: relative;
+	-webkit-animation-name:fadeInLeft;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-fill-mode: both;
+	-webkit-animation-delay: 0.5s;
+}
+
+.buttons #bt2 i{
+	-webkit-animation-delay: 1s;
+}
+
+.buttons #bt3 i{
+	-webkit-animation-delay: 1.5s;
+}
+
+.buttons #bt4 i{
+	-webkit-animation-delay: 2s;
+}
+
+.buttons button:hover span{
+	position: relative;
+	-webkit-animation-name:flipInX;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-fill-mode: both;
+}
+
+.buttons i {
+	-webkit-transition:all 0.3s ease-in-out;
+}
+
+.buttons:active 	.buttons span{
+	-webkit-transform: scale(10);
+}
+
+.buttons #bt4:hover i{
+	
+	
+	-webkit-transform: translateX(40px) rotate(360deg);
+	opacity: 0;
+	
+}*/
+
+.buttons #bt1:hover i{
+	-webkit-transform:scale(10);
+	opacity: 0;
+}
+
+.buttons #bt2:hover i{
+	-webkit-transform: rotateY(360deg) skew(10deg,10deg);
+}
+
+.buttons #bt3:hover i{
+	-webkit-transform:scale(1.2);
+}
+
+.nav-holder ul.nav li i{
+	position: relative;
+	-webkit-animation: fadeInLeft 1s ease 0.5s both;
+}
+
+.nav-holder ul .nave li i {
+	-webkit-transition:all 0.3s ease-in-out;
+}
+
+.nav-holder .nav li:hover a{
+	-color: #FFF;
+}
+
+.nav-holder #btn1:hover i{
+	-webkit-transition: scale(1.2);
+}
