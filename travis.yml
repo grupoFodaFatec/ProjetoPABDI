@@ -1,2 +1,2 @@
 language: Java
-script: mvn clear
+script: mvn clean
