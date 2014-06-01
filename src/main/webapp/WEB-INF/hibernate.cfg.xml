@@ -18,11 +18,11 @@
         <!--property name="show_sql">true</property>
         <property name="format_sql">true</property-->
 
-        <mapping class="com.cereteste.pojo.Answer"></mapping>
-        <mapping class="com.cereteste.pojo.Game"></mapping>
-        <mapping class="com.cereteste.pojo.Question"></mapping>
-        <mapping class="com.cereteste.pojo.Result"></mapping>
-        <mapping class="com.cereteste.pojo.Score"></mapping>
-        <mapping class="com.cereteste.pojo.User"></mapping>
+        <mapping class="com.cereteste.pojo.Answer"/>
+        <mapping class="com.cereteste.pojo.Game"/>
+        <mapping class="com.cereteste.pojo.Question"/>
+        <mapping class="com.cereteste.pojo.Result"/>
+        <mapping class="com.cereteste.pojo.Score"/>
+        <mapping class="com.cereteste.pojo.User"/>
     </session-factory>
 </hibernate-configuration>
