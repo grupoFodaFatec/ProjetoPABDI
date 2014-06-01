@@ -17,7 +17,7 @@ import java.util.Date;
 @ContextConfiguration("file:src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml")
 
 public class ScoreTest {
-//teste
+//teste hhhhhhhhhhhhhh
     private ScoreService service = new ScoreServiceImpl();
 
     @Test
