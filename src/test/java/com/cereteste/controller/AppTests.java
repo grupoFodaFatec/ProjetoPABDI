@@ -1,4 +1,4 @@
-package com.cereteste.mvc;
+package com.cereteste.controller;
 
 import org.junit.Before;
 import org.junit.Test;

@@ -1,4 +1,4 @@
-package com.cereteste.mvc;
+package com.cereteste.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -11,7 +11,6 @@ public class HelloController {
 
     @RequestMapping(method = RequestMethod.GET)
 	public String printWelcome(ModelMap model) {
-		model.addAttribute("message", "Olá, mundo!");
 		return "hello";
 	}
 }
