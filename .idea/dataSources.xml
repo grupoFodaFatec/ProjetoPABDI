@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="3860793172">
+  <component name="DataSourceManagerImpl" format="xml" hash="617508027">
     <data-source source="LOCAL" name="src:main:webapp:WEB-INF:hibernate.cfg.xml" uuid="1019dff6-0b3f-4951-a633-dcb9d47556e1">
       <driver-ref>mysql</driver-ref>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
@@ -12,6 +12,14 @@
           <url>file://C:\Users\Arthur\.m2\repository\mysql\mysql-connector-java\5.1.29\mysql-connector-java-5.1.29.jar</url>
         </library>
       </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="hibernate.cfg.xml" uuid="8142f569-6fae-4512-8fb2-8d6122744a08">
+      <driver-ref>mysql</driver-ref>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/cereteste</jdbc-url>
+      <user-name>root</user-name>
+      <user-password>dfd8dfc5dfc5dfde</user-password>
+      <libraries />
     </data-source>
   </component>
 </project>
