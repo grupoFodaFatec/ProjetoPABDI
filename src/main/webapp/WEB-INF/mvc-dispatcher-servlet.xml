@@ -24,4 +24,7 @@
 
     <bean class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean"/>
 
+    <mvc:interceptors>
+        <bean class="com.cereteste.interceptor.LoginInterceptor" />
+    </mvc:interceptors>
 </beans>
