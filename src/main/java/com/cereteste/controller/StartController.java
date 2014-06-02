@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class StartController {
 
     @RequestMapping(method = RequestMethod.GET)
-    public String printWelcome(ModelMap model) {
+    public String startPage(ModelMap model) {
         return "start";
     }
 }

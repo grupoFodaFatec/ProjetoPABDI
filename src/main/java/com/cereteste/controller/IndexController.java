@@ -18,7 +18,7 @@ public class IndexController {
     UserService service = new UserServiceImpl();
 
     @RequestMapping(value = {"/index", "/"}, method = RequestMethod.GET)
-    public String printWelcome(ModelMap model) {
+    public String indexPage(ModelMap model) {
         model.addAttribute("user", new User());
         return "index";
     }

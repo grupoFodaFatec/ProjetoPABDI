@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class TextController {
 
     @RequestMapping(method = RequestMethod.GET)
-    public String printWelcome(ModelMap model) {
+    public String textPage(ModelMap model) {
         return "text";
     }
 }

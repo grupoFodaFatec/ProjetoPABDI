@@ -21,7 +21,6 @@
         <mapping class="com.cereteste.pojo.Answer"/>
         <mapping class="com.cereteste.pojo.Game"/>
         <mapping class="com.cereteste.pojo.Question"/>
-        <mapping class="com.cereteste.pojo.Result"/>
         <mapping class="com.cereteste.pojo.Score"/>
         <mapping class="com.cereteste.pojo.User"/>
     </session-factory>

@@ -33,4 +33,10 @@ public class QuestionDaoImpl implements QuestionDao {
         Transaction tx = session.beginTransaction();
         return session.createQuery("from Question").list();
     }
+
+    public int sizeList() {
+        session = ConnectionFactory.getSessionFactory();
+        Transaction tx = session.beginTransaction();
+        return ((Long)session.createQuery("select count(*) from Question").uniqueResult()).intValue();
+    }
 }

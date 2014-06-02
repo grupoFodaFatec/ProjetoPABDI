@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class RankingController {
 
     @RequestMapping(method = RequestMethod.GET)
-    public String printWelcome(ModelMap model) {
+    public String rankingPage(ModelMap model) {
         return "ranking";
     }
 }

@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class PasswordController {
 
     @RequestMapping(method = RequestMethod.GET)
-    public String printWelcome(ModelMap model) {
+    public String passwordPage(ModelMap model) {
         return "password";
     }
 }

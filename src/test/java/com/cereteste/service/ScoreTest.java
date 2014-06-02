@@ -17,7 +17,7 @@ import java.util.Date;
 @ContextConfiguration("file:src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml")
 
 public class ScoreTest {
-//teste hhhhhhhhhhhhhh
+
     private ScoreService service = new ScoreServiceImpl();
 
     @Test
@@ -26,6 +26,7 @@ public class ScoreTest {
 
         score.setScore(1209);
         score.setDate(new SimpleDateFormat("dd/MM/yyyy").format(new Date()));
+        score.setUser(null);
 
         service.addScore(score);
     }

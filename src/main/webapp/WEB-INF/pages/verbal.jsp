@@ -4,12 +4,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="<c:url value="/resources/style/font-awesome.min.css" />"/>
-  <link rel="stylesheet" type="text/css" href="<c:url value="/resources/style/style2.css" />"/>
-  <script type="text/javascript" src="<c:url value="/resources/script/js/timer.js" />"/>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="<c:url value="/resources/style/font-awesome.min.css" />" />
+  <link rel="stylesheet" type="text/css" href="<c:url value="/resources/style/style2.css" />" />
 
-  <!--<meta name="MobileOptimized" content="320">-->
+	<script type="text/javascript" src="<c:url value="/resources/script/js/timer.js" />"></script>
+
   <title>CereTeste</title>
 </head>
 <body>
@@ -28,13 +28,13 @@
 				<input type="radio" name="answers">Dia
 			</label>
 			<label>
-			<input type="radio" name="answers">Primavera
+				<input type="radio" name="answers">Primavera
 			</label>
 			<label>
-			<input type="radio" name="answers">Fogão
+				<input type="radio" name="answers">Fogão
 			</label>
 			<label>
-			<input type="radio" name="answers">Verão
+				<input type="radio" name="answers">Verão
 			</label>
 		</div>
 	</div>

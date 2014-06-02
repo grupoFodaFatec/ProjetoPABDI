@@ -44,7 +44,3 @@ function startGame(){
 		interval = undefined;
 	}*/		
 }
-
-
-
-	

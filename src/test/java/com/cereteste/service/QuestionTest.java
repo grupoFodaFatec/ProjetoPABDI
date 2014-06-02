@@ -1,7 +1,6 @@
 package com.cereteste.service;
 
 import com.cereteste.pojo.Question;
-import com.cereteste.service.QuestionService;
 import com.cereteste.service.impl.QuestionServiceImpl;
 import junit.framework.Assert;
 import org.junit.Test;
@@ -9,6 +8,8 @@ import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
+
+import java.util.List;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration
@@ -47,5 +48,14 @@ public class QuestionTest {
     @Test
     public void testListAllQuestions() {
         Assert.assertNotNull(service.getQuestions());
+    }
+
+    @Test
+    public void testRandomQuestions() {
+        List<Question> l = service.getRandomQuestions();
+        for (Question i: l) {
+            System.out.println("Question id: " + i.getIdQuestion());
+            System.out.println("Question: " + i.getQuestion());
+        }
     }
 }
