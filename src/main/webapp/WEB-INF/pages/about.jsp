@@ -10,13 +10,13 @@
   <meta name="MobileOptimized" content="320"/>
 </head>
 <body>
-	<div class="about">
+  <div class="content">
     <h1 class="header">About</h1>
     <div id="about">
       <p>Arthur Miranda =D</p>
       <p>Gláucia Araújo T.T</p>
       <p>Wu Shang =]</p>
     </div>
-	</div>
+  </div>
 </body>
 </html>

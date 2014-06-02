@@ -11,7 +11,7 @@
   <title>CereTeste</title>
 </head>
 <body>
-	<div class="ranking">
+	<div class="content">
 		<h1 class="header">Ranking</h1>
 		<table>
 			<tr class="table_top">
@@ -32,6 +32,5 @@
 			</tr>
 		</table>
 	</div>
-	<div name="scape"></div>
 </body>
 </html>

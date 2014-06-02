@@ -124,6 +124,7 @@ form button{
 
 
 .content{
+	text-align: center;
 	width: 100%;
 	height: 100%;
 	position: relative;
@@ -307,30 +308,29 @@ form button{
 	display: block;
 }*/
 
-.start, .ranking, .about{
-	/*color: #FFF;*/
+/*.start, .ranking, .about{
+	color: #FFF;
 	width: 100%;
 	text-align: center;
-}
+}*/
 
 .header{
 	margin-top: 5%;
 }
 
-.start p {
+p {
 	margin-top: 10px;
 }
 
-.start ul li{
+ul li{
 	padding: 10px 0px;
 }
 
-.start ul li a{
+ul li a{
 	color: #fff;
 	text-decoration: underline;
 }
-
-.ranking table , .about #about{
+table , #about{
 	margin: 5% auto;
 	max-width: 80%;
 	padding: 10px;
@@ -339,17 +339,17 @@ form button{
 	border-radius: 30px;
 }
 
-.ranking table .table_top{
+table .table_top{
 	background-color: #000000;
 	color: #FFF;
 }
 
-.ranking table tr th{
+table tr th{
 	padding: 5px;
 	border-radius: 15px;
 }
 
-.ranking table tr:hover:not([class="table_top"]) th{
+table tr:hover:not([class="table_top"]) th{
 	/*background-color: #f1f1f1;*/
 	color: #50c3ef;
 	/*color: #43d5b1;*/
@@ -357,6 +357,21 @@ form button{
 	/*background-color: #F8F8FF;*/
 }
 
+.time{
+	margin-top: 5%;
+}
+
+#btn_start{
+	margin: 10px;
+}
+
+input[type="radio"]{
+	margin: 0px 10px;
+}
+
+.question{
+	margin-top: 15px;
+}
 
 
 .form{

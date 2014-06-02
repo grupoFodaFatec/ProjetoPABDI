@@ -39,12 +39,12 @@
 	/*color: #43d5b1;*/
 }
 
-.nav-holder ul.nav #nav1:hover i, .nav-holder ul.nav #nav3:hover i{
+.nav-holder ul.nav #nav2:hover i, .nav-holder ul.nav #nav4:hover i{
 	-webkit-transform:scale(4);
 	opacity: 0.4;
 }
 
-.nav-holder ul.nav #nav2:hover i{
+.nav-holder ul.nav #nav1:hover i, .nav-holder ul.nav #nav3:hover i{
 	-webkit-transform: rotateY(360deg) skew(10deg,10deg) scale(4);
 	opacity: 0.4;
 }
@@ -54,7 +54,7 @@
 	opacity: 0.4;
 }*/
 
-.nav-holder ul.nav #nav4:hover i{
+.nav-holder ul.nav #nav5:hover i{
 	-webkit-transform: translateX(80px) rotate(360deg) scale(4);
 	opacity: 0.4;
 }
