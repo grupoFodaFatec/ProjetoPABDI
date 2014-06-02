@@ -34,4 +34,8 @@ public class ScoreServiceImpl implements ScoreService {
     public List<Score> getScores() {
         return scoreDao.getScores();
     }
+
+    public List<Score> getRanking() {
+        return scoreDao.getRanking();
+    }
 }

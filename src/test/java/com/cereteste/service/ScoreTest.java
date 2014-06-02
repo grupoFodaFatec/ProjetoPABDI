@@ -50,6 +50,9 @@ public class ScoreTest {
 
     @Test
     public void testListAllScores() {
-        Assert.assertNotNull(service.getScores());
+        //Assert.assertNotNull(service.getScores());
+        for (Score i: service.getRanking()) {
+            System.out.println("Score "+ i .getScore());
+        }
     }
 }

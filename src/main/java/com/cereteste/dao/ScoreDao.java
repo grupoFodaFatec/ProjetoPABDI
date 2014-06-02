@@ -8,4 +8,5 @@ public interface ScoreDao {
     public void addOrUpdateScore(Score score);
     public Score getScore(int id);
     public List<Score> getScores();
+    public List<Score> getRanking();
 }

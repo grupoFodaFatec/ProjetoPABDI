@@ -9,4 +9,5 @@ public interface ScoreService {
     public void updateScore(Score score);
     public Score getScore(int id);
     public List<Score> getScores();
+    public List<Score> getRanking();
 }

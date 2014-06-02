@@ -19,16 +19,16 @@
 				<th id="point" style="width: 200px;">Pontuação</th>
 			</tr>
 			<tr>
-				<th><i class="fa fa-trophy" style="color: #FFD700; margin-right: 10px;"></i>Shang</th>
-				<th>4500</th>
+				<td><i class="fa fa-trophy" style="color: #FFD700; margin-right: 10px;"></i>${ranking[0].user.name}</td>
+				<td>${ranking[0].score}</td>
 			</tr>
 			<tr>
-				<th><i class="fa fa-trophy" style="color: #CDCDCD; margin-right: 10px;"></i>Arthur</th>
-				<th>4000</th>
+				<td><i class="fa fa-trophy" style="color: #CDCDCD; margin-right: 10px;"></i>${ranking[1].user.name}</td>
+				<td>${ranking[1].score}</td>
 			</tr>
 			<tr>
-				<th><i class="fa fa-trophy" style="color: #8B4513; margin-right: 10px;"></i>Gláucia</th>
-				<th>2000</th>
+				<td><i class="fa fa-trophy" style="color: #8B4513; margin-right: 10px;"></i>${ranking[2].user.name}</td>
+				<td>${ranking[2].score}</td>
 			</tr>
 		</table>
 	</div>

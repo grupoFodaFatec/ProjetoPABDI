@@ -7,6 +7,7 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.springframework.stereotype.Repository;
 
+import javax.persistence.Query;
 import java.util.List;
 
 @Repository
@@ -32,5 +33,12 @@ public class ScoreDaoImpl implements ScoreDao {
         session = ConnectionFactory.getSessionFactory();
         Transaction tx = session.beginTransaction();
         return session.createQuery("from Score").list();
+    }
+
+    public List<Score> getRanking() { //TODO
+        session = ConnectionFactory.getSessionFactory();
+        Transaction tx = session.beginTransaction();
+        String hql = "select Score from Score limit order by score desc";
+        return null; //session.createQuery(hql).setMaxResults(3).list();
     }
 }
