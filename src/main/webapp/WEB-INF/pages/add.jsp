@@ -1,5 +1,4 @@
 ﻿<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <!DOCTYPE html>
@@ -23,12 +22,12 @@
 
         <form:form class="add" action="/user/create" commandName="user">
             <div class="form-wrap-add">
-                <input id="name" name="name" type="text" maxlength="50" placeholder="Nome"
-                       title="Por favor, preencha seu nome!" required autofocus>
-                <input id="text" type="text" name="login" placeholder="Login"
-                       title="Por favor, preencha seu login!" required>
-                <input id="password" name="password" type="password" placeholder="Senha"
-                       title="Por favor, preecha sua senha!" required>
+                <input id="name" name="name" type="text" maxlength="60" placeholder="Nome"
+                       title="Por favor, preencha seu nome" required autofocus>
+                <input id="text" type="text" name="login" maxlength="60" placeholder="Login"
+                       title="Por favor, preencha seu login" required>
+                <input id="password" name="password" type="password" maxlength="20" placeholder="Senha"
+                       title="Por favor, preecha sua senha" required>
 
                 <div id="btn-add">
                     <button id="submit" type="submit">Cadastrar</button>

@@ -1,5 +1,4 @@
 ﻿<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <!DOCTYPE html>
@@ -24,15 +23,15 @@
         <h2 class="form-heading">ACESSE</h2>
 
         <div class="form-wrap">
-            <form class="sign" action="main.html" method="">
+            <form:form class="sign" action="/login" commandName="user">
 
                 <label><i class="fa fa-user fa-fw"></i></label>
-                <input id="login" type="text" maxlength="100" placeholder="Login" title="Por favor, preencha seu login."
+                <input id="login" name="login" type="text" maxlength="60" placeholder="Login" title="Por favor, preencha seu login"
                        required autofocus autocomplete="off">
 
                 <label><i class="fa fa-key fa-fw"></i></label>
-                <input id="pass" type="password" maxlength="100" placeholder="Senha"
-                       title="Por favor, preencha sua senha." required>
+                <input id="pass" name="password" type="password" maxlength="20" placeholder="Senha"
+                       title="Por favor, preencha sua senha" required>
                 <!--<div class="input-group">
                     <span><i class="fa fa-user fa-fx"></i></span>
                     <input id="login" class="form-control" type="text" maxlength="100" placeholder ="Login" title="Por favor, preencha seu login." required autofocus autocomplete="off">
@@ -52,9 +51,9 @@
 
                 <p>
                     <a href="#modal">Esqueceu a sua Senha?</a><br/><br/>
-                    Ainda não é CADASTRADO? <a href="add.html">Clique Aqui!</a>
+                    Ainda não é CADASTRADO? <a href="/user/add">Clique Aqui!</a>
                 </p>
-            </form>
+            </form:form>
         </div>
     </div>
     <div name="scape"></div>
@@ -65,10 +64,10 @@
         <div class="modal-header">
             <a href="index.html"><i class="fa fa-times"></i></a>
 
-            <h2 class="modal-heading">Esqueceu a sua Senha ?</h2>
+            <h2 class="modal-heading">Esqueceu a sua senha ?</h2>
         </div>
         <div class="modal-body">
-            <p>Digite o E-Mail cadastrado.</p>
+            <p>Digite o e-mail cadastrado.</p>
             <input type="text" name="email" placeholder="E-Mail">
         </div>
         <div class="modal-footer">

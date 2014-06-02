@@ -27,6 +27,7 @@ public class AddController {
     @RequestMapping(value = "/create", method = RequestMethod.POST)
     @SessionScoped
     public String addUser(@ModelAttribute User user, ModelMap model, HttpSession session) {
+        user.setType(1);
         service.addUser(user);
         session.setAttribute("user", user);
         return "redirect:/index";

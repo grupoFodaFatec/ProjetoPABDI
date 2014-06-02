@@ -1,5 +1,4 @@
 ﻿<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <!DOCTYPE html>
@@ -29,16 +28,16 @@
         </div>
         <ul class="nav nav-pills nav-stacked">
             <li id="nav1">
-                <a href="start.html" target="iframe"><i class="fa fa-gamepad fa-2x"></i>Start</a>
+                <a href="/start" target="iframe"><i class="fa fa-gamepad fa-2x"></i>Start</a>
             </li>
             <li id="nav2">
-                <a href="ranking.html" target="iframe"><i class="fa fa-list-ol fa-2x"></i>Ranking</a>
+                <a href="/ranking" target="iframe"><i class="fa fa-list-ol fa-2x"></i>Ranking</a>
             </li>
             <li id="nav3">
-                <a href="about.html" target="iframe"><i class="fa fa-exclamation-circle fa-2x"></i>About</a>
+                <a href="/about" target="iframe"><i class="fa fa-exclamation-circle fa-2x"></i>About</a>
             </li>
             <li id="nav4">
-                <a href="index.html"><i class="fa fa-arrow-circle-o-right fa-2x"></i>Quit</a>
+                <a href="/logout"><i class="fa fa-arrow-circle-o-right fa-2x"></i>Quit</a>
             </li>
         </ul>
     </div>

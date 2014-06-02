@@ -33,4 +33,17 @@ public class UserDaoImpl implements UserDao {
         Transaction tx = session.beginTransaction();
         return session.createQuery("from User").list();
     }
+
+    public User login(User user) {
+        session = ConnectionFactory.getSessionFactory();
+        Transaction tx = session.beginTransaction();
+        List<User> l = session.createQuery("from User where login = :login")
+                .setParameter("login", user.getLogin())
+                .list();
+        if (l.size() > 0) {
+            User u = l.get(0);
+            if (u.getPassword().equals(user.getPassword())) return u;
+        }
+        return null;
+    }
 }
