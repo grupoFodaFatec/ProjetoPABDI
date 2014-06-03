@@ -17,7 +17,7 @@ public class Answer {
     private String answer;
 
     @Column(name = "correct", nullable = true, insertable = true, updatable = true)
-    private Integer correct;
+    private Boolean correct;
 
     @ManyToOne
     @JoinColumn(name = "fk_idQuestion")
@@ -39,11 +39,11 @@ public class Answer {
         this.answer = answer;
     }
 
-    public Integer getCorrect() {
+    public Boolean getCorrect() {
         return correct;
     }
 
-    public void setCorrect(Integer correct) {
+    public void setCorrect(Boolean correct) {
         this.correct = correct;
     }
 

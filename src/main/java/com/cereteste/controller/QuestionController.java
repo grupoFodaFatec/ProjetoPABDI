@@ -1,51 +1,44 @@
 package com.cereteste.controller;
 
+import com.cereteste.pojo.Answer;
+import com.cereteste.pojo.FakeQuestion;
+import com.cereteste.pojo.Question;
+import com.cereteste.service.AnswerService;
+import com.cereteste.service.QuestionService;
 import com.cereteste.service.impl.AnswerServiceImpl;
 import com.cereteste.service.impl.QuestionServiceImpl;
-import com.cereteste.workaround.QuestionObject;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-@RequestMapping("/question")
 public class QuestionController {
 
-    private QuestionServiceImpl questionService;
-    private AnswerServiceImpl awsAnswerService;
+    private QuestionService questionService = new QuestionServiceImpl();
+    private AnswerService awsAnswerService = new AnswerServiceImpl();
 
-    @RequestMapping(method = RequestMethod.GET)
-    public String questionPage(ModelMap model) {
-        model.addAttribute("question", new QuestionObject());
-        return "question";
+    @RequestMapping(value = "/question", method = RequestMethod.GET)
+    public ModelAndView questionPage() {
+        ModelAndView modelAndView = new ModelAndView("question");
+        modelAndView.addObject("fakeQuestion", new FakeQuestion());
+        return modelAndView;
     }
 
-    @RequestMapping(value = "/add", method = RequestMethod.POST)
-    public String questionAdd(@ModelAttribute QuestionObject questionObject, ModelMap model) {
-        if(questionObject != null){
-            if(questionObject.getQuestion() != null){
-                questionObject.getQuestion().setType(1);
-                questionService.addQuestion(questionObject.getQuestion());
+    @RequestMapping(value = "/question/add", method = RequestMethod.POST)
+    public String questionAdd(@ModelAttribute FakeQuestion fakequestion) {
+        //Create and save Question
+            Question question = fakequestion.createQuestion();
+            question.setType(1);
+            questionService.addQuestion(question);
 
-                if(questionObject.getAnswerA()!= null && questionObject.getAnswerB()!= null &&
-                        questionObject.getAnswerC()!= null && questionObject.getAnswerD()!= null &&
-                        questionObject.getAnswerE()!= null) {
-                            questionObject.getAnswerA().setQuestion(questionObject.getQuestion());
-                            questionObject.getAnswerB().setQuestion(questionObject.getQuestion());
-                            questionObject.getAnswerC().setQuestion(questionObject.getQuestion());
-                            questionObject.getAnswerD().setQuestion(questionObject.getQuestion());
-                            questionObject.getAnswerE().setQuestion(questionObject.getQuestion());
-
-                            awsAnswerService.addAnswer(questionObject.getAnswerA());
-                            awsAnswerService.addAnswer(questionObject.getAnswerB());
-                            awsAnswerService.addAnswer(questionObject.getAnswerC());
-                            awsAnswerService.addAnswer(questionObject.getAnswerD());
-                            awsAnswerService.addAnswer(questionObject.getAnswerE());
-                }else System.out.println("respostas nulas");
-            }else System.out.println("Questao nula");
-        }else System.out.println("Tudo nulo");
+        //Create and Save Answer
+            awsAnswerService.addAnswer(fakequestion.createAnswerA());
+            awsAnswerService.addAnswer(fakequestion.createAnswerB());
+            awsAnswerService.addAnswer(fakequestion.createAnswerC());
+            awsAnswerService.addAnswer(fakequestion.createAnswerD());
+            awsAnswerService.addAnswer(fakequestion.createAnswerE());
         return "redirect:/question";
     }
 }

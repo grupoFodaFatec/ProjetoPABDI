@@ -15,16 +15,15 @@
 <body>
 	<div class="content">
 		<h1 class="header">Adicionar Questão</h1>
-		
-		<form:form class="questionObject" action="/question/add" method="post">
+		<form:form name="question" class="question" action="/question/add" method="post">
 			<span style="vertical-align: top;">Questão:</span>
-			<textarea name="questionObject.question.question" type="text" maxlength="1000" size="100" style="height:100px; width:300px;"></textarea>
+			<textarea name="question" type="text" maxlength="1000" size="100" style="height:100px; width:300px;"></textarea>
 			<div class="answer">
-                <input type="radio" name="questionObject.answerA.correct">A.<input name="questionObject.answerA.answer" type="text" maxlength="50" size="30">
-				<input type="radio" name="questionObject.answerB.correct">B.<input name="answerB" type="text" maxlength="50" size="30">
-				<input type="radio" name="questionObject.answerC.correct">C.<input name="answerC" type="text" maxlength="50" size="30">
-				<input type="radio" name="questionObject.answerD.correct">D.<input name="answerD" type="text" maxlength="50" size="30">
-                <input type="radio" name="questionObject.answerE.correct">E.<input name="answerE" type="text" maxlength="50" size="30">
+                <input type="radio" name="isCorrectAnswerA">A.<input path="answerA" type="text" maxlength="50" size="30">
+				<input type="radio" name="isCorrectAnswerB">B.<input name="answerB" type="text" maxlength="50" size="30">
+				<input type="radio" name="isCorrectAnswerC">C.<input name="answerC" type="text" maxlength="50" size="30">
+				<input type="radio" name="isCorrectAnswerD">D.<input name="answerD" type="text" maxlength="50" size="30">
+                <input type="radio" name="isCorrectAnswerE">E.<input name="answerE" type="text" maxlength="50" size="30">
 			</div>
 			<div id="btn-add">
 				<button type="submit" id="submit">Cadastrar</button>
