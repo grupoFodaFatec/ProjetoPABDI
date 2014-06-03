@@ -29,7 +29,7 @@
 			<li id="nav1">
 				<a href="/question" target="iframe">
 					<i class="fa fa-plus-square fa-2x"></i>
-					Add Question
+					Add
 				</a>
 			</li>
 			<li id="nav2">
