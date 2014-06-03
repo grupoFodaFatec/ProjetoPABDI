@@ -13,7 +13,7 @@
 		function respostaRadio(){
 			var resposta = "";
 			var radio = null;
-			radio = document.formAnswer.answer;
+			radio = document.formAnswers.answers;
 			for(var i = 0; i < radio.length; i++){
 				if(radio[i].checked) resposta ="Selecionado: " + radio[i].id;
 			}
@@ -73,9 +73,10 @@
 		    <input type="radio" name="answers" id="c" value="C" />C. <span id="answer2">${answers[2].answer}</span>
 		    <input type="radio" name="answers" id="d" value="D" />D. <span id="answer3">${answers[3].answer}</span>
 		    <input type="radio" name="answers" id="e" value="E" />E. <span id="answer4">${answers[4].answer}</span>
+		    <input type="button" value="Próximo" onclick="respostaRadio();">
 	    </form>
 	    <br />
-		  <button onclick="respostaRadio();">Próxima</button>
+		 
     </div>
   </div>
 </body>
