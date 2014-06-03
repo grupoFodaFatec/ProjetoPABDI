@@ -3,6 +3,7 @@ package com.cereteste.dao.impl;
 import com.cereteste.ConnectionFactory;
 import com.cereteste.dao.AnswerDao;
 import com.cereteste.pojo.Answer;
+import com.cereteste.pojo.Question;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.springframework.stereotype.Repository;
@@ -32,5 +33,14 @@ public class AnswerDaoImpl implements AnswerDao {
         session = ConnectionFactory.getSessionFactory();
         Transaction tx = session.beginTransaction();
         return session.createQuery("from Answer").list();
+    }
+
+    @SuppressWarnings("unchecked")
+    public List<Answer> getAnswersQuestion(Question question) {
+        session = ConnectionFactory.getSessionFactory();
+        Transaction tx = session.beginTransaction();
+        return session.createQuery("from Answer where question = :question")
+                .setParameter("question", question)
+                .list();
     }
 }

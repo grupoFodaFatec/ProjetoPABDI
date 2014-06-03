@@ -17,7 +17,7 @@
 	    <h3>Selecione o Tipo de Jogo:</h3>
 		</p>
 	  <ul>
-	    <li><a href="/verbal">Raciocínio Verbal</a></li>
+	    <li><a href="/verbal/init">Raciocínio Verbal</a></li>
 	    <li><a href="#">Raciocínio Lógico</a></li>
 	  </ul>
 	</div>

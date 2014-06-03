@@ -3,12 +3,15 @@ package com.cereteste.service;
 import com.cereteste.pojo.Answer;
 import com.cereteste.service.AnswerService;
 import com.cereteste.service.impl.AnswerServiceImpl;
+import com.cereteste.service.impl.QuestionServiceImpl;
 import junit.framework.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
+
+import java.util.List;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration
@@ -49,5 +52,12 @@ public class AnswerTest {
     @Test
     public void testListAllAnswers() {
         Assert.assertNotNull(service.getAnswers());
+    }
+
+    @Test
+    public void testAnswersQuestion() {
+        QuestionService q = new QuestionServiceImpl();
+        List<Answer> l = service.getAnswersQuestion(q.getQuestion(1));
+        for (Answer i: l) System.out.println(i.getAnswer());
     }
 }
