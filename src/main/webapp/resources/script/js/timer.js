@@ -37,10 +37,16 @@ function conta(){
 	document.getElementById("timer").innerHTML = formatTimer();
 }
 
-function startGame(){	
+function startGame(){
+	document.getElementById("question").style.visibility = "visible";
+	document.getElementById("btn_start").style.visibility = "hidden";
 	interval = setInterval(conta, 10);
 	/*else {
 		clearInterval( interval );
 		interval = undefined;
 	}*/		
 }
+
+
+
+	

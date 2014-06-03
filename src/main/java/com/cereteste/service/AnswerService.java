@@ -11,4 +11,5 @@ public interface AnswerService {
     public Answer getAnswer(int id);
     public List<Answer> getAnswers();
     public List<Answer> getAnswersQuestion(Question question);
+    public Answer getRight(Question question);
 }

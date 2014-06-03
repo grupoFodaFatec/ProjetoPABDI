@@ -43,4 +43,15 @@ public class AnswerDaoImpl implements AnswerDao {
                 .setParameter("question", question)
                 .list();
     }
+
+    @SuppressWarnings("unchecked")
+    public Answer getRight(Question question) {
+        session = ConnectionFactory.getSessionFactory();
+        Transaction tx = session.beginTransaction();
+        return (Answer) session.createQuery("from Answer where question = :question " +
+                "and correct = 1")
+                .setParameter("question", question)
+                .list()
+                .get(0);
+    }
 }
