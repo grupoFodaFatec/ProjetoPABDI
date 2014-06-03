@@ -26,7 +26,7 @@
 				<input type="radio" name="answers">D.<span id="d"></span>
 			</div>
 			<div id="btn-add">
-				<form:button id="submit">Cadastrar</form:button>
+				<button type="submit" id="submit">Cadastrar</button>
 				<button id="reset" type="reset">Limpar</button>
 				<a href="/main"><button id="cancel" type="button">Cancelar</button></a>
 			</div>

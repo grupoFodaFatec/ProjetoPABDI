@@ -14,20 +14,24 @@
 	<div class="content">
 		<h1 class="header">Ranking</h1>
 		<table>
-			<tr class="table_top">
-				<th id="name" style="width: 770px;">Nome</th>
-				<th id="point" style="width: 200px;">Pontuação</th>
-			</tr>
+			<thead>
+				<tr class="table_top">
+					<th id="name" style="width: 770px;">Nome</th>
+					<th id="point" style="width: 200px;">Pontuação</th>
+				</tr>
+			</thead>
+			<tbody>
+					<tr>
+						<td><i class="fa fa-trophy" style="color: #FFD700; margin-right: 10px;"> ${ranking[0].user.name}</i></td>
+						<td>${ranking[0].score}</td>
+					</tr>
+			</tbody>
 			<tr>
-				<td><i class="fa fa-trophy" style="color: #FFD700; margin-right: 10px;"></i>${ranking[0].user.name}</td>
-				<td>${ranking[0].score}</td>
-			</tr>
-			<tr>
-				<td><i class="fa fa-trophy" style="color: #CDCDCD; margin-right: 10px;"></i>${ranking[1].user.name}</td>
+				<td><i class="fa fa-trophy" style="color: #CDCDCD; margin-right: 10px;"> ${ranking[1].user.name}</i></td>
 				<td>${ranking[1].score}</td>
 			</tr>
 			<tr>
-				<td><i class="fa fa-trophy" style="color: #8B4513; margin-right: 10px;"></i>${ranking[2].user.name}</td>
+				<td><i class="fa fa-trophy" style="color: #8B4513; margin-right: 10px;"> ${ranking[2].user.name}</i></td>
 				<td>${ranking[2].score}</td>
 			</tr>
 		</table>

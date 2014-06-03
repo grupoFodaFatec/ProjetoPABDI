@@ -11,6 +11,6 @@ public class MainController {
 
     @RequestMapping(method = RequestMethod.GET)
     public String mainPage(ModelMap model) {
-        return "mainAdm";
+        return "mainUser";
     }
 }

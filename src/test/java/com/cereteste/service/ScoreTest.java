@@ -11,6 +11,7 @@ import org.springframework.test.context.web.WebAppConfiguration;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration
@@ -20,7 +21,7 @@ public class ScoreTest {
 
     private ScoreService service = new ScoreServiceImpl();
 
-    @Test
+    /*@Test
     public void testAddScore() {
         Score score = new Score();
 
@@ -46,13 +47,14 @@ public class ScoreTest {
     @Test
     public void testListScore() {
         Assert.assertNotNull(service.getScore(1));
-    }
+    }*/
 
     @Test
     public void testListAllScores() {
         //Assert.assertNotNull(service.getScores());
+        List<Score> l = service.getRanking();
         for (Score i: service.getRanking()) {
-            System.out.println("Score "+ i .getScore());
+            System.out.println("Score "+ i.getScore());
         }
     }
 }

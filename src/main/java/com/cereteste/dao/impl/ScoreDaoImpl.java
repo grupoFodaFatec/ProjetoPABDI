@@ -35,10 +35,10 @@ public class ScoreDaoImpl implements ScoreDao {
         return session.createQuery("from Score").list();
     }
 
-    public List<Score> getRanking() { //TODO
+    @SuppressWarnings("unchecked")
+    public List<Score> getRanking() {
         session = ConnectionFactory.getSessionFactory();
         Transaction tx = session.beginTransaction();
-        String hql = "select Score from Score limit order by score desc";
-        return null; //session.createQuery(hql).setMaxResults(3).list();
+        return session.createQuery("from Score order by score desc").setMaxResults(3).list();
     }
 }
