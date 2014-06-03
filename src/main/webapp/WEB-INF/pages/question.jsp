@@ -30,7 +30,7 @@
 			<div id="btn-add">
 				<button type="submit" id="submit">Cadastrar</button>
 				<button id="reset" type="reset">Limpar</button>
-				<a href="/main"><button id="cancel" type="button">Cancelar</button></a>
+				<a href="/question"><button id="cancel" type="button">Cancelar</button></a>
 			</div>
 		</form:form>
 	</div>
