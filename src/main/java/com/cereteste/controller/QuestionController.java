@@ -29,9 +29,7 @@ public class QuestionController {
     @RequestMapping(value = "/question/add", method = RequestMethod.POST)
     public String questionAdd(@ModelAttribute FakeQuestion fakequestion) {
         //Create and save Question
-            Question question = fakequestion.createQuestion();
-            question.setType(1);
-            questionService.addQuestion(question);
+            questionService.addQuestion(fakequestion.createQuestion());
 
         //Create and Save Answer
             awsAnswerService.addAnswer(fakequestion.createAnswerA());

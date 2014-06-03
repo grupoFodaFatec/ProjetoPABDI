@@ -124,6 +124,7 @@ public class FakeQuestion {
 
     public Question createQuestion(){
         Question question1 = new Question();
+        question1.setType(this.type);
         question1.setQuestion(this.question);
         return question1;
     }
