@@ -21,6 +21,13 @@ public class QuestionDaoImpl implements QuestionDao {
         tx.commit();
     }
 
+    public void delete(Question question) {
+        session = ConnectionFactory.getSessionFactory();
+        Transaction tx = session.beginTransaction();
+        session.delete(question);
+        tx.commit();
+    }
+
     public Question getQuestion(int id) {
         session = ConnectionFactory.getSessionFactory();
         Transaction tx = session.beginTransaction();
@@ -37,6 +44,6 @@ public class QuestionDaoImpl implements QuestionDao {
     public int sizeList() {
         session = ConnectionFactory.getSessionFactory();
         Transaction tx = session.beginTransaction();
-        return ((Long)session.createQuery("select count(*) from Question").uniqueResult()).intValue();
+        return ((Long) session.createQuery("select count(*) from Question").uniqueResult()).intValue();
     }
 }

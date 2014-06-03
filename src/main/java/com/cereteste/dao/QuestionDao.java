@@ -6,6 +6,9 @@ import java.util.List;
 
 public interface QuestionDao {
     public void addOrUpdateQuestion(Question question);
+
+    public void delete(Question question);
+
     public Question getQuestion(int id);
     public List<Question> getQuestions();
     public int sizeList();

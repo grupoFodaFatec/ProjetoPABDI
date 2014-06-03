@@ -22,6 +22,13 @@ public class AnswerDaoImpl implements AnswerDao {
         tx.commit();
     }
 
+    public void delete(Answer answer) {
+        session = ConnectionFactory.getSessionFactory();
+        Transaction tx = session.beginTransaction();
+        session.delete(answer);
+        tx.commit();
+    }
+
     public Answer getAnswer(int id) {
         session = ConnectionFactory.getSessionFactory();
         Transaction tx = session.beginTransaction();

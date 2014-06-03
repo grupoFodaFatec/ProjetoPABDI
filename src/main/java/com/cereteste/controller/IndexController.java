@@ -29,7 +29,8 @@ public class IndexController {
         User u = service.login(user);
         if (u != null) {
             session.setAttribute("user", u);
-            return "redirect:/main";
+            if (u.getType() == 1) return "mainAdm";
+            else return "mainUser";
         }
         return "redirect:/index";
     }
