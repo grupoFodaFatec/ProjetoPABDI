@@ -47,7 +47,7 @@
 		</ul>
 	</div>
 	<div class="content-holder">
-		<iframe	srcdoc="<p style=color:#FFF;>BEM VINDOOOOO!!!</p>" name="iframe" scrolling="no" frameborder="0"></iframe>
+		<iframe	srcdoc="<p style=color:#FFF;>BEM VINDOOOOO!!!</p>" name="iframe" scrolling="yes" frameborder="0"></iframe>
 	</div>
 </div>
 <div class="footer">
