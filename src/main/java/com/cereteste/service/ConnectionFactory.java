@@ -1,4 +1,4 @@
-package com.cereteste;
+package com.cereteste.service;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -20,7 +20,7 @@ public class ConnectionFactory {
             StandardServiceRegistry standardServiceRegistry = sb.build();
             sessionFactory = cfg.buildSessionFactory(standardServiceRegistry);
         } catch (Throwable th) {
-            System.err.println("Enitial SessionFactory creation failed" + th);
+            System.err.println("Initial SessionFactory creation failed" + th);
             throw new ExceptionInInitializerError(th);
         }
     }

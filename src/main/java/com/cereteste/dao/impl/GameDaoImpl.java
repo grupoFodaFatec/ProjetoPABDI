@@ -1,8 +1,8 @@
 package com.cereteste.dao.impl;
 
-import com.cereteste.ConnectionFactory;
 import com.cereteste.dao.GameDao;
 import com.cereteste.pojo.Game;
+import com.cereteste.service.ConnectionFactory;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.springframework.stereotype.Repository;

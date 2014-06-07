@@ -1,8 +1,8 @@
 package com.cereteste;
 
+import com.cereteste.service.ConnectionFactory;
 import junit.framework.Assert;
 import org.hibernate.Session;
-import org.hibernate.SessionFactory;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
