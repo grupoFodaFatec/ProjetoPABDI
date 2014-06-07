@@ -1,25 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46b93467-65a1-464e-b4a9-2c563f7f0bfa" name="Default" comment="CRUD Question ok">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml.LOCAL.4067.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml.LOCAL.4675.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml.LOCAL.4733.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml.LOCAL.4798.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml.LOCAL.4862.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml.LOCAL.4916.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml.LOCAL.4999.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/cereteste/ConnectionFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/cereteste/service/ConnectionFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cereteste/dao/impl/AnswerDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/cereteste/dao/impl/AnswerDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/CereTeste_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/CereTeste_war.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/CereTeste_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/CereTeste_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cereteste/dao/impl/GameDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/cereteste/dao/impl/GameDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/cereteste/HibernateTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/cereteste/HibernateTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cereteste/dao/impl/QuestionDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/cereteste/dao/impl/QuestionDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cereteste/dao/impl/ScoreDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/cereteste/dao/impl/ScoreDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cereteste/dao/impl/UserDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/cereteste/dao/impl/UserDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/hibernate.cfg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/questionList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/questionList.jsp" />
+    <list default="true" id="46b93467-65a1-464e-b4a9-2c563f7f0bfa" name="Default" comment="Acertando Erros">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="101f0857-4542-4a4b-9df7-717aea862af2" name="Rejected commit: Default" comment="Login Interceptor and format classes" />
@@ -210,10 +193,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mvc-dispatcher-servlet.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="mvc-dispatcher-servlet.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="1066" selection-end="1066" vertical-scroll-proportion="0.7048904" vertical-offset="14" max-vertical-offset="630">
+            <state line="24" column="0" selection-start="1066" selection-end="1066" vertical-scroll-proportion="0.0" vertical-offset="14" max-vertical-offset="630">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="6" selection-start="42" selection-end="42" vertical-scroll-proportion="0.12676056" vertical-offset="0" max-vertical-offset="568">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="414">
               <folding />
             </state>
           </provider>
@@ -259,7 +260,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/main.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/mainUser.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/mainAdm.jsp" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/cereteste/service/ScoreTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cereteste/controller/RankingController.java" />
@@ -292,6 +292,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/cereteste/ConnectionFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cereteste/service/ConnectionFactory.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -983,7 +984,7 @@
       <workItem from="1401840511731" duration="484000" />
       <workItem from="1402004584022" duration="431000" />
       <workItem from="1402009205329" duration="2820000" />
-      <workItem from="1402155095882" duration="634000" />
+      <workItem from="1402155095882" duration="752000" />
     </task>
     <task id="LOCAL-00001" summary="Fixing some problems">
       <created>1401658289533</created>
@@ -1005,11 +1006,15 @@
       <created>1401741428242</created>
       <updated>1401741428242</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Acertando Erros">
+      <created>1402155929884</created>
+      <updated>1402155929884</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99000000" />
+    <option name="totallyTimeSpent" value="99118000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1033,7 +1038,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="52" y="-4" width="1315" height="773" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1050,7 +1055,7 @@
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3228098" sideWeight="0.49736843" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3228098" sideWeight="0.49736843" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41358024" sideWeight="0.49960536" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1058,6 +1063,7 @@
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37108794" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31193355" sideWeight="0.501355" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930514" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1067,7 +1073,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34104937" sideWeight="0.49960536" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39967373" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1090,7 +1095,8 @@
     <MESSAGE value=".idea class" />
     <MESSAGE value="Show ranking" />
     <MESSAGE value="CRUD Question ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="CRUD Question ok" />
+    <MESSAGE value="Acertando Erros" />
+    <option name="LAST_COMMIT_MESSAGE" value="Acertando Erros" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1104,13 +1110,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="666">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
@@ -1128,7 +1127,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cereteste/pojo/Score.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cereteste/controller/RankingController.java">
@@ -1138,7 +1141,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cereteste/dao/impl/ScoreDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cereteste/controller/StartController.java">
@@ -1238,7 +1243,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cereteste/pojo/Question.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="26" selection-start="405" selection-end="415" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1044" />
+        <state line="13" column="26" selection-start="405" selection-end="415" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1044">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cereteste/pojo/FakeQuestion.java">
@@ -1253,7 +1260,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cereteste/dao/impl/QuestionDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="31" selection-start="803" selection-end="803" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="972" />
+        <state line="26" column="31" selection-start="803" selection-end="803" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="972">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1064#1094#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cereteste/service/ScoreService.java">
@@ -1278,7 +1290,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/questionList.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="21" selection-start="1183" selection-end="1183" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="828" />
+        <state line="33" column="21" selection-start="1183" selection-end="1183" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="828">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cereteste/dao/AnswerDao.java">
@@ -1288,7 +1302,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cereteste/dao/impl/AnswerDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="31" selection-start="819" selection-end="819" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1098" />
+        <state line="27" column="31" selection-start="819" selection-end="819" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1098">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/3.2.0.RELEASE/spring-web-3.2.0.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
@@ -1341,13 +1357,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.4425087" vertical-offset="127" max-vertical-offset="414">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cereteste/controller/IndexController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="32" selection-start="1219" selection-end="1236" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="702">
@@ -1371,7 +1380,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="1066" selection-end="1066" vertical-scroll-proportion="0.7048904" vertical-offset="14" max-vertical-offset="630">
+        <state line="24" column="0" selection-start="1066" selection-end="1066" vertical-scroll-proportion="0.0" vertical-offset="14" max-vertical-offset="630">
           <folding />
         </state>
       </provider>
@@ -1379,6 +1388,20 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="414">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="6" selection-start="42" selection-end="42" vertical-scroll-proportion="0.12676056" vertical-offset="0" max-vertical-offset="568">
           <folding />
         </state>
       </provider>

@@ -2,3 +2,4 @@ CereTeste.iml
 *.class
 *.iml
 target/
+.idea/
