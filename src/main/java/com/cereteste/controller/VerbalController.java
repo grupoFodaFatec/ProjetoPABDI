@@ -82,7 +82,7 @@ public class VerbalController {
             Answer right = answerService.getRight(questions.get(cont-1));
 
             // TODO - DEFINIR REGRA DE PONTUAÇÃO
-            if (game.getAnswer().equals(right.getCorrect())) result -= game.getTime();
+            //if (game.getAnswer().equals(right.getCorrect())) result -= game.getTime();
 
             String json ="{\"question\":\"" + q.getQuestion() +
                     "\",\"answer0\":\""+ answers.get(0).getAnswer() +
