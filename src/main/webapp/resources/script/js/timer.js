@@ -38,7 +38,7 @@ function conta(){
 }
 
 function startGame(){
-	document.getElementById("question").style.visibility = "visible";
+	document.getElementById("questions").style.visibility = "visible";
 	document.getElementById("btn_start").style.visibility = "hidden";
 	interval = setInterval(conta, 10);
 	/*else {

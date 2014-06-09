@@ -12,14 +12,17 @@ import javax.servlet.http.HttpSession;
 @Controller
 public class MainController {
 
-    @RequestMapping(value = {"/mainAdm", "/mainUser"}, method = RequestMethod.GET)
+    @RequestMapping(value = "/adm", method = RequestMethod.GET)
     @SessionScoped
-    public String mainPage(ModelMap model, HttpSession session) {
-        User user = (User) session.getAttribute("user");
-        if (user != null) {
-            if (user.getType() == 1) return "mainAdm";
-            else return "mainUser";
-        }
+    public String mainAdm(ModelMap model, HttpSession session) {
+        if (!session.getAttribute("user").equals(null)) return "mainAdm";
+        return "redirect:/index";
+    }
+
+    @RequestMapping(value = "/main", method = RequestMethod.GET)
+    @SessionScoped
+    public String mainUser(ModelMap model, HttpSession session) {
+        if (!session.getAttribute("user").equals(null)) return "mainUser";
         return "redirect:/index";
     }
 }

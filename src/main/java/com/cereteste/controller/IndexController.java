@@ -29,8 +29,8 @@ public class IndexController {
         User u = service.login(user);
         if (u != null) {
             session.setAttribute("user", u);
-            if (u.getType() == 1) return "mainAdm";
-            else return "mainUser";
+            if (u.getType() == 0) return "redirect:/adm";
+            else return "redirect:/main";
         }
         return "redirect:/index";
     }
@@ -38,7 +38,7 @@ public class IndexController {
     @RequestMapping(value = "/logout", method = RequestMethod.GET)
     @SessionScoped
     public String logout(ModelMap model, HttpSession session) {
-        session.setAttribute("user", null);
+        session.removeAttribute("user");
         return "redirect:/index";
     }
 }
