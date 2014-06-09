@@ -13,19 +13,15 @@
 </head>
 
 <body>
-<div class="start">
-    <h1 class="header">Questões</h1>
-
-    <p>
-    </p>
-    <ul>
-        <li><a href="/questionAdd">Adicionar Nova Questão</a></li>
-    </ul>
-    <ul>
-        <li><a href="/questionList">Listar todas as Questões</a></li>
-    </ul>
-</div>
+	<div class="content">
+		<h1 class="header">Questões</h1>
+		<br />
+		<ul>
+			<li><a href="/questionAdd">Adicionar nova questão</a></li>
+		</ul>
+		<ul>
+			<li><a href="/questionList">Listar todas as questões</a></li>
+		</ul>
+	</div>
 </body>
-
-
 </html>

@@ -11,7 +11,7 @@
   <title>CereTeste</title>
 </head>
 <body>
-	<div class="start">
+	<div class="content">
 	  <h1 class="header">CereTeste</h1>
 	  <p>
 	    <h3>Selecione o Tipo de Jogo:</h3>

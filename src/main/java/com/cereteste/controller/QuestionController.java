@@ -34,15 +34,15 @@ public class QuestionController {
 
     @RequestMapping(value = "/question/save", method = RequestMethod.POST)
     public String questionAdd(@ModelAttribute FakeQuestion fakequestion) {
-        //Create and save Question
-            questionService.addQuestion(fakequestion.createQuestion());
+    //Create and save Question
+        questionService.addQuestion(fakequestion.createQuestion());
 
-        //Create and Save Answer
-            awsAnswerService.addAnswer(fakequestion.createAnswerA());
-            awsAnswerService.addAnswer(fakequestion.createAnswerB());
-            awsAnswerService.addAnswer(fakequestion.createAnswerC());
-            awsAnswerService.addAnswer(fakequestion.createAnswerD());
-            awsAnswerService.addAnswer(fakequestion.createAnswerE());
+    //Create and Save Answer
+        awsAnswerService.addAnswer(fakequestion.createAnswerA());
+        awsAnswerService.addAnswer(fakequestion.createAnswerB());
+        awsAnswerService.addAnswer(fakequestion.createAnswerC());
+        awsAnswerService.addAnswer(fakequestion.createAnswerD());
+        awsAnswerService.addAnswer(fakequestion.createAnswerE());
         return "redirect:/question";
     }
 
@@ -51,7 +51,6 @@ public class QuestionController {
         model.addAttribute("questions", questionService.getQuestions());
         return "questionList";
     }
-
 
     @RequestMapping(value = "/questionEdit/{id}", method = RequestMethod.GET)
     public String questionListPage(@PathVariable Integer id, ModelMap model) {
@@ -67,6 +66,4 @@ public class QuestionController {
         questionService.delete(question);
         return "question";
     }
-
-
 }

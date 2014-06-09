@@ -69,11 +69,11 @@
         <span id="question">${question.question}</span>
 		  </div>
 	    <form id="formAnswers" name="formAnswers">
-		    <input type="radio" name="answers" id="a" value="A" />A. <span id="answer0">${answers[0].answer}</span>
-		    <input type="radio" name="answers" id="b" value="B" />B. <span id="answer1">${answers[1].answer}</span>
-		    <input type="radio" name="answers" id="c" value="C" />C. <span id="answer2">${answers[2].answer}</span>
-		    <input type="radio" name="answers" id="d" value="D" />D. <span id="answer3">${answers[3].answer}</span>
-		    <input type="radio" name="answers" id="e" value="E" />E. <span id="answer4">${answers[4].answer}</span>
+		    <input type="radio" name="answers" id="a" value="A" />A. <span id="answer0">${answers[0].answer}</span><br />
+		    <input type="radio" name="answers" id="b" value="B" />B. <span id="answer1">${answers[1].answer}</span><br />
+		    <input type="radio" name="answers" id="c" value="C" />C. <span id="answer2">${answers[2].answer}</span><br />
+		    <input type="radio" name="answers" id="d" value="D" />D. <span id="answer3">${answers[3].answer}</span><br />
+		    <input type="radio" name="answers" id="e" value="E" />E. <span id="answer4">${answers[4].answer}</span><br />
 		    <br />
 		    <input type="button" value="Próximo" onclick="next();">
 	    </form>
