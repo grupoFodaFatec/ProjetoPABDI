@@ -1,6 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,8 +18,8 @@
     <table>
         <thead>
         <tr>
-            <th width="10%">id</th>
-            <th width="45%">name</th>
+            <th width="10%">ID</th>
+            <th width="45%">Name</th>
             <th width="10%">Ação</th>
         </tr>
         </thead>
@@ -30,8 +29,9 @@
                 <td>${item.idQuestion}</td>
                 <td>${item.question}</td>
                 <td>
-                    <a href="/questionEdit/${item.idQuestion}">Edit</a><br>
-                    <a href="/questionDelete/${item.idQuestion}">Delete</a><br>
+                    <a href="/questionEdit/${item.idQuestion}">Edit</a>
+	                  <br />
+                    <a href="/questionDelete/${item.idQuestion}">Delete</a>
                 </td>
             </tr>
         </c:forEach>

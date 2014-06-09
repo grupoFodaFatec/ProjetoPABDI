@@ -15,24 +15,25 @@
 <body>
 <div class="content">
     <h1 class="header">Editar Questão</h1>
-    <form:form name="question" class="question" action="/question/save" method="post">
+    <form:form name="question" class="question" action="/question/save">
         <span style="vertical-align: top;">Questão:</span>
         <input name="question" type="text" value="${fakeQuestion.question}" maxlength="1000" size="100"
                style="height:100px; width:600px;">
+	      <br />
         <span style="vertical-align: top;">Tipo:</span>
         <input name="type" type="number" max="10" min="1" value="${fakeQuestion.type}">
 
         <div class="answer">
             <input type="radio" name="isCorrectAnswerA" checked="${fakeQuestion.isCorrectAnswerA}">A.<input
-                path="answerA" value="${fakeQuestion.answerA}" type="text" maxlength="50" size="20">
+                path="answerA" value="${fakeQuestion.answerA}" type="text" maxlength="50" size="20"><br />
             <input type="radio" name="isCorrectAnswerB" checked="${fakeQuestion.isCorrectAnswerB}">B.<input
-                name="answerB" value="${fakeQuestion.answerB}" type="text" maxlength="50" size="20">
+                name="answerB" value="${fakeQuestion.answerB}" type="text" maxlength="50" size="20"><br />
             <input type="radio" name="isCorrectAnswerC" checked="${fakeQuestion.isCorrectAnswerC}">C.<input
-                name="answerC" value="${fakeQuestion.answerC}" type="text" maxlength="50" size="20">
+                name="answerC" value="${fakeQuestion.answerC}" type="text" maxlength="50" size="20"><br />
             <input type="radio" name="isCorrectAnswerD" checked="${fakeQuestion.isCorrectAnswerD}">D.<input
-                name="answerD" value="${fakeQuestion.answerD}" type="text" maxlength="50" size="20">
+                name="answerD" value="${fakeQuestion.answerD}" type="text" maxlength="50" size="20"><br />
             <input type="radio" name="isCorrectAnswerE" checked="${fakeQuestion.isCorrectAnswerE}">E.<input
-                name="answerE" value="${fakeQuestion.answerE}" type="text" maxlength="50" size="20">
+                name="answerE" value="${fakeQuestion.answerE}" type="text" maxlength="50" size="20"><br />
         </div>
         <input name="fakeid" type="hidden" value="${fakeQuestion.fakeid}">
         <input name="fakeidA" type="hidden" value="${fakeQuestion.fakeidA}">
@@ -41,9 +42,9 @@
         <input name="fakeidD" type="hidden" value="${fakeQuestion.fakeidD}">
         <input name="fakeidE" type="hidden" value="${fakeQuestion.fakeidE}">
 
+	      <br />
         <div id="btn-add">
             <button type="submit" id="submit">Salvar</button>
-            <button id="reset" type="reset">Limpar</button>
             <a href="/question">
                 <button id="cancel" type="button">Cancelar</button>
             </a>
@@ -51,5 +52,4 @@
     </form:form>
 </div>
 </body>
-
 </html>
