@@ -17,10 +17,10 @@
 		<h1 class="header">Questões</h1>
 		<br />
 		<ul>
-			<li><a href="/questionAdd">Adicionar nova questão</a></li>
+			<li><a href="/questionAdd">Adicionar nova questão de raciocínio verbal</a></li>
 		</ul>
 		<ul>
-			<li><a href="/questionList">Listar todas as questões</a></li>
+			<li><a href="/questionList">Listar todas as questões de raciocínio verbal</a></li>
 		</ul>
 	</div>
 </body>

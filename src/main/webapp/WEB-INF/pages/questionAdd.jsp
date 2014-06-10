@@ -26,23 +26,20 @@
         <span style="vertical-align: top;">Questão:</span>
         <textarea name="question" type="text" maxlength="1000" size="100" style="min-height:50px;min-width:600px;max-height:100px; max-width:600px;" required></textarea>
         <span style="vertical-align: top;">Tipo:</span>
-        <input name="type" type="number" max="10" min="1" value="1">
-        <br>
+        <input name="type" type="number" max="10" min="1" value="1" style="vertical-align: top;">
 
         <div class="answer">
-            <input type="checkbox" name="isCorrectAnswerA" checked="true">A.</input>
-            <input path="answerA" type="text" maxlength="50" size="20" title="Por favor, preenche a resposta" required />
-            <input type="checkbox" name="isCorrectAnswerB">B.</input>
-            <input name="answerB" type="text" maxlength="50" size="20" title="Por favor, preenche a resposta" required />
-            <input type="checkbox" name="isCorrectAnswerC">C.</input>
-            <input name="answerC" type="text" maxlength="50" size="20" title="Por favor, preenche a resposta" required />
-            <input type="checkbox" name="isCorrectAnswerD">D.</input>
-            <input name="answerD" type="text" maxlength="50" size="20" title="Por favor, preenche a resposta" required />
-            <input type="checkbox" name="isCorrectAnswerE">E.</input>
-            <input name="answerE" type="text" maxlength="50" size="20" title="Por favor, preenche a resposta" required />
+            <input type="checkbox" name="isCorrectAnswerA" value="1">A.</input>
+            <input name="answerA" type="text" maxlength="50" size="20" title="Por favor, preencha a resposta" required />
+            <input type="checkbox" name="isCorrectAnswerB" value="1">B.</input>
+            <input name="answerB" type="text" maxlength="50" size="20" title="Por favor, preencha a resposta" required />
+            <input type="checkbox" name="isCorrectAnswerC" value="1">C.</input>
+            <input name="answerC" type="text" maxlength="50" size="20" title="Por favor, preencha a resposta" required />
+            <input type="checkbox" name="isCorrectAnswerD" value="1">D.</input>
+            <input name="answerD" type="text" maxlength="50" size="20" title="Por favor, preencha a resposta" required />
+            <input type="checkbox" name="isCorrectAnswerE" value="1">E.</input>
+            <input name="answerE" type="text" maxlength="50" size="20" title="Por favor, preencha a resposta" required />
         </div>
-        <br>
-        <br>
 
         <div id="btn-add">
             <button type="submit" id="submit" onclick="mensagemOperacao()">Cadastrar</button>

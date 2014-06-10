@@ -25,26 +25,26 @@
 
         <span style="vertical-align: top;">Questão:</span>
         <input name="question" type="text" value="${fakeQuestion.question}" maxlength="1000" size="100"
-               style="height:100px; width:600px;">
+               style= "width:600px;">
         <span style="vertical-align: top;">Tipo:</span>
         <input name="type" type="number" max="10" min="1" value="${fakeQuestion.type}">
         <br>
         <br>
 
         <div>
-            <input type="checkbox" name="isCorrectAnswerA"  checked="${fakeQuestion.isCorrectAnswerA}">A.</input>
+            <input type="checkbox" name="isCorrectAnswerA" value="1" ${fakeQuestion.isCorrectAnswerA == 1 ? "checked":""}>A.</input>
             <input name="answerA" value="${fakeQuestion.answerA}" type="text" maxlength="500" size="50" />
             <p/>
-            <input type="checkbox" name="isCorrectAnswerB"  checked="${fakeQuestion.isCorrectAnswerB}">B.</input>
+            <input type="checkbox" name="isCorrectAnswerB" value="1" ${fakeQuestion.isCorrectAnswerB == 1 ? "checked":""}>B.</input>
             <input name="answerB" value="${fakeQuestion.answerB}" type="text" maxlength="50" size="50" />
             <p/>
-            <input type="checkbox" name="isCorrectAnswerC"  checked="${fakeQuestion.isCorrectAnswerC}">C.</input>
+            <input type="checkbox" name="isCorrectAnswerC" value="1" ${fakeQuestion.isCorrectAnswerC == 1 ? "checked":""}>C.</input>
             <input name="answerC" value="${fakeQuestion.answerC}" type="text" maxlength="50" size="50" />
             <p/>
-            <input type="checkbox" name="isCorrectAnswerD" checked="${fakeQuestion.isCorrectAnswerD}">D.</input>
+            <input type="checkbox" name="isCorrectAnswerD" value="1" ${fakeQuestion.isCorrectAnswerD == 1 ? "checked":""}>D.</input>
             <input name="answerD" value="${fakeQuestion.answerD}" type="text" maxlength="50" size="50" />
             <p/>
-            <input type="checkbox" name="isCorrectAnswerE" checked="${fakeQuestion.isCorrectAnswerE}">E.</input>
+            <input type="checkbox" name="isCorrectAnswerE" value="1" ${fakeQuestion.isCorrectAnswerE == 1 ? "checked":""}>E.</input>
             <input name="answerE" value="${fakeQuestion.answerE}" type="text" maxlength="50" size="50" />
             <p/>
         </div>

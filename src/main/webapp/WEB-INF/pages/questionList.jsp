@@ -24,9 +24,9 @@
 
     <table border="1px">
         <thead>
-        <tr>
-            <th width="10%">id</th>
-            <th width="45%">name</th>
+        <tr class="table_top">
+            <th width="10%">Id</th>
+            <th width="45%">Perguntas</th>
             <th width="10%">Ação</th>
         </tr>
         </thead>

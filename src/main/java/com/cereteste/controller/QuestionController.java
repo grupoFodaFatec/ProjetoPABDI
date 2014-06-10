@@ -1,5 +1,6 @@
 package com.cereteste.controller;
 
+import com.cereteste.pojo.Answer;
 import com.cereteste.pojo.FakeQuestion;
 import com.cereteste.pojo.Question;
 import com.cereteste.service.AnswerService;
@@ -34,15 +35,32 @@ public class QuestionController {
 
     @RequestMapping(value = "/question/save", method = RequestMethod.POST)
     public String questionAdd(@ModelAttribute FakeQuestion fakequestion) {
-    //Create and save Question
-        questionService.addQuestion(fakequestion.createQuestion());
+        //Create and save Question
+        Question question = fakequestion.createQuestion();
+            questionService.addQuestion(question);
 
-    //Create and Save Answer
-        awsAnswerService.addAnswer(fakequestion.createAnswerA());
-        awsAnswerService.addAnswer(fakequestion.createAnswerB());
-        awsAnswerService.addAnswer(fakequestion.createAnswerC());
-        awsAnswerService.addAnswer(fakequestion.createAnswerD());
-        awsAnswerService.addAnswer(fakequestion.createAnswerE());
+        //Create and Save Answer
+        Answer answerA = fakequestion.createAnswerA();
+        answerA.setQuestion(question);
+        awsAnswerService.addAnswer(answerA);
+
+
+        Answer answerB = fakequestion.createAnswerB();
+        answerB.setQuestion(question);
+        awsAnswerService.addAnswer(answerB);
+
+        Answer answerC = fakequestion.createAnswerC();
+        answerC.setQuestion(question);
+        awsAnswerService.addAnswer(answerC);
+
+        Answer answerD = fakequestion.createAnswerD();
+        answerD.setQuestion(question);
+        awsAnswerService.addAnswer(answerD);
+
+        Answer answerE = fakequestion.createAnswerE();
+        answerE.setQuestion(question);
+        awsAnswerService.addAnswer(answerE);
+
         return "redirect:/question";
     }
 
@@ -51,6 +69,7 @@ public class QuestionController {
         model.addAttribute("questions", questionService.getQuestions());
         return "questionList";
     }
+
 
     @RequestMapping(value = "/questionEdit/{id}", method = RequestMethod.GET)
     public String questionListPage(@PathVariable Integer id, ModelMap model) {
@@ -66,4 +85,6 @@ public class QuestionController {
         questionService.delete(question);
         return "question";
     }
+
+
 }

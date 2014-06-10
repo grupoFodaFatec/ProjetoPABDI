@@ -191,7 +191,7 @@ public class FakeQuestion {
 
     public Answer createAnswerA() {
         Answer answer1 = new Answer();
-        answer1.setCorrect(this.isCorrectAnswerA);
+        answer1.setCorrect(this.getIsCorrectAnswerA());
         answer1.setAnswer(this.answerA);
         if (fakeidA != null) answer1.setIdAnswer(this.fakeidA);
         return answer1;
@@ -199,7 +199,7 @@ public class FakeQuestion {
 
     public Answer createAnswerB() {
         Answer answer1 = new Answer();
-        answer1.setCorrect(this.isCorrectAnswerB);
+        answer1.setCorrect(this.getIsCorrectAnswerB());
         answer1.setAnswer(this.answerB);
         if (fakeidB != null) answer1.setIdAnswer(this.fakeidB);
         return answer1;
@@ -207,7 +207,7 @@ public class FakeQuestion {
 
     public Answer createAnswerC() {
         Answer answer1 = new Answer();
-        answer1.setCorrect(this.isCorrectAnswerC);
+        answer1.setCorrect(this.getIsCorrectAnswerC());
         answer1.setAnswer(this.answerC);
         if (fakeidC != null) answer1.setIdAnswer(this.fakeidC);
         return answer1;
@@ -215,7 +215,7 @@ public class FakeQuestion {
 
     public Answer createAnswerD() {
         Answer answer1 = new Answer();
-        answer1.setCorrect(this.isCorrectAnswerD);
+        answer1.setCorrect(this.getIsCorrectAnswerD());
         answer1.setAnswer(this.answerD);
         if (fakeidD != null) answer1.setIdAnswer(this.fakeidD);
         return answer1;
@@ -223,7 +223,7 @@ public class FakeQuestion {
 
     public Answer createAnswerE() {
         Answer answer1 = new Answer();
-        answer1.setCorrect(this.isCorrectAnswerE);
+        answer1.setCorrect(this.getIsCorrectAnswerE());
         answer1.setAnswer(this.answerE);
         if (fakeidE != null) answer1.setIdAnswer(this.fakeidE);
         return answer1;
@@ -238,7 +238,7 @@ public class FakeQuestion {
 
         List<Answer> answer = service.getAnswersQuestion(question1);
         if (answer != null){
-            if(answer.size() <= 1){
+            if(answer.size() >= 1){
                 this.fakeidA = answer.get(0).getIdAnswer();
                 this.answerA = answer.get(0).getAnswer();
                 this.isCorrectAnswerA = answer.get(0).getCorrect();
@@ -247,7 +247,7 @@ public class FakeQuestion {
                 this.isCorrectAnswerA = 0;
             }
 
-            if(answer.size() <= 2){
+            if(answer.size() >= 2){
                 this.fakeidB = answer.get(1).getIdAnswer();
                 this.answerB = answer.get(1).getAnswer();
                 this.isCorrectAnswerB = answer.get(1).getCorrect();
@@ -256,7 +256,7 @@ public class FakeQuestion {
                 this.isCorrectAnswerB = 0;
             }
 
-            if(answer.size() <= 3){
+            if(answer.size() >= 3){
                 this.fakeidC = answer.get(2).getIdAnswer();
                 this.answerC = answer.get(2).getAnswer();
                 this.isCorrectAnswerC = answer.get(2).getCorrect();
@@ -265,7 +265,7 @@ public class FakeQuestion {
                 this.isCorrectAnswerC = 0;
             }
 
-            if(answer.size() <= 4){
+            if(answer.size() >= 4){
                 this.fakeidD = answer.get(3).getIdAnswer();
                 this.answerD = answer.get(3).getAnswer();
                 this.isCorrectAnswerD = answer.get(3).getCorrect();
@@ -274,7 +274,7 @@ public class FakeQuestion {
                 this.isCorrectAnswerD = 0;
             }
 
-            if(answer.size() <= 5){
+            if(answer.size() >= 5){
             this.fakeidE = answer.get(4).getIdAnswer();
             this.answerE = answer.get(4).getAnswer();
             this.isCorrectAnswerE = answer.get(4).getCorrect();
