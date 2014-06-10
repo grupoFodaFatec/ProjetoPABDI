@@ -1,4 +1,4 @@
-package com.cereteste.service;
+package com.cereteste;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class ConnectionFactory {
 
     @Autowired
-    private static SessionFactory sessionFactory;
+    protected static SessionFactory sessionFactory;
 
     static {
         try {

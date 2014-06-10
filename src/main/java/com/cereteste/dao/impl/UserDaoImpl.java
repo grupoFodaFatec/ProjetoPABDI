@@ -2,7 +2,7 @@ package com.cereteste.dao.impl;
 
 import com.cereteste.dao.UserDao;
 import com.cereteste.pojo.User;
-import com.cereteste.service.ConnectionFactory;
+import com.cereteste.ConnectionFactory;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.springframework.stereotype.Repository;

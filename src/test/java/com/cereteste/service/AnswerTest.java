@@ -27,7 +27,7 @@ public class AnswerTest {
 
         answer.setQuestion(null);
         answer.setAnswer("Answer A");
-        answer.setCorrect(true);
+        answer.setCorrect(1);
 
         service.addAnswer(answer);
     }
@@ -39,7 +39,7 @@ public class AnswerTest {
         answer.setIdAnswer(1);
         answer.setQuestion(null);
         answer.setAnswer("Answer B");
-        answer.setCorrect(true);
+        answer.setCorrect(1);
 
         service.updateAnswer(answer);
     }

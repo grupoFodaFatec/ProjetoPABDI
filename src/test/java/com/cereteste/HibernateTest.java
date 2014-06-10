@@ -1,6 +1,5 @@
 package com.cereteste;
 
-import com.cereteste.service.ConnectionFactory;
 import junit.framework.Assert;
 import org.hibernate.Session;
 import org.junit.Test;

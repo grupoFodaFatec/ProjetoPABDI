@@ -9,7 +9,7 @@ import java.util.List;
  */
 public class FakeQuestion {
 
-    private Integer fakeid;
+    Integer fakeid;
     private String question;
     private String answerA;
     private String answerB;
@@ -22,11 +22,11 @@ public class FakeQuestion {
     private Integer fakeidD;
     private Integer fakeidE;
     private Integer type;
-    private Boolean isCorrectAnswerA;
-    private Boolean isCorrectAnswerB;
-    private Boolean isCorrectAnswerC;
-    private Boolean isCorrectAnswerD;
-    private Boolean isCorrectAnswerE;
+    private Integer isCorrectAnswerA;
+    private Integer isCorrectAnswerB;
+    private Integer isCorrectAnswerC;
+    private Integer isCorrectAnswerD;
+    private Integer isCorrectAnswerE;
 
     public FakeQuestion() {
     }
@@ -87,49 +87,49 @@ public class FakeQuestion {
         this.type = type;
     }
 
-    public Boolean getIsCorrectAnswerA() {
-        if (isCorrectAnswerA == null) return false;
+    public Integer getIsCorrectAnswerA() {
+        if (isCorrectAnswerA == null) return 0;
         return isCorrectAnswerA;
     }
 
-    public void setIsCorrectAnswerA(Boolean isCorrectAnswerA) {
+    public void setIsCorrectAnswerA(Integer isCorrectAnswerA) {
         this.isCorrectAnswerA = isCorrectAnswerA;
     }
 
-    public Boolean getIsCorrectAnswerB() {
-        if (isCorrectAnswerB == null) return false;
+    public Integer getIsCorrectAnswerB() {
+        if (isCorrectAnswerB == null) return 0;
         return isCorrectAnswerB;
     }
 
-    public void setIsCorrectAnswerB(Boolean isCorrectAnswerB) {
+    public void setIsCorrectAnswerB(Integer isCorrectAnswerB) {
 
         this.isCorrectAnswerB = isCorrectAnswerB;
     }
 
-    public Boolean getIsCorrectAnswerC() {
-        if (isCorrectAnswerC == null) return false;
+    public Integer getIsCorrectAnswerC() {
+        if (isCorrectAnswerC == null) return 0;
         return isCorrectAnswerC;
     }
 
-    public void setIsCorrectAnswerC(Boolean isCorrectAnswerC) {
+    public void setIsCorrectAnswerC(Integer isCorrectAnswerC) {
         this.isCorrectAnswerC = isCorrectAnswerC;
     }
 
-    public Boolean getIsCorrectAnswerD() {
-        if (isCorrectAnswerC == null) return false;
+    public Integer getIsCorrectAnswerD() {
+        if (isCorrectAnswerC == null) return 0;
         return isCorrectAnswerD;
     }
 
-    public void setIsCorrectAnswerD(Boolean isCorrectAnswerD) {
+    public void setIsCorrectAnswerD(Integer isCorrectAnswerD) {
         this.isCorrectAnswerD = isCorrectAnswerD;
     }
 
-    public Boolean getIsCorrectAnswerE() {
-        if (isCorrectAnswerE == null) return false;
+    public Integer getIsCorrectAnswerE() {
+        if (isCorrectAnswerE == null) return 0;
         return isCorrectAnswerE;
     }
 
-    public void setIsCorrectAnswerE(Boolean isCorrectAnswerE) {
+    public void setIsCorrectAnswerE(Integer isCorrectAnswerE) {
         this.isCorrectAnswerE = isCorrectAnswerE;
     }
 
@@ -237,30 +237,52 @@ public class FakeQuestion {
         AnswerServiceImpl service = new AnswerServiceImpl();
 
         List<Answer> answer = service.getAnswersQuestion(question1);
+        if (answer != null){
+            if(answer.size() <= 1){
+                this.fakeidA = answer.get(0).getIdAnswer();
+                this.answerA = answer.get(0).getAnswer();
+                this.isCorrectAnswerA = answer.get(0).getCorrect();
+            }else {
+                this.answerA = new String();
+                this.isCorrectAnswerA = 0;
+            }
 
-        this.fakeidA = answer.get(0).getIdAnswer();
-        this.answerA = answer.get(0).getAnswer();
-        this.isCorrectAnswerA = answer.get(0).getCorrect();
+            if(answer.size() <= 2){
+                this.fakeidB = answer.get(1).getIdAnswer();
+                this.answerB = answer.get(1).getAnswer();
+                this.isCorrectAnswerB = answer.get(1).getCorrect();
+            }else{
+                this.answerB = new String();
+                this.isCorrectAnswerB = 0;
+            }
 
+            if(answer.size() <= 3){
+                this.fakeidC = answer.get(2).getIdAnswer();
+                this.answerC = answer.get(2).getAnswer();
+                this.isCorrectAnswerC = answer.get(2).getCorrect();
+            }else{
+                this.answerC = new String();
+                this.isCorrectAnswerC = 0;
+            }
 
-        this.fakeidB = answer.get(1).getIdAnswer();
-        this.answerB = answer.get(1).getAnswer();
-        this.isCorrectAnswerB = answer.get(1).getCorrect();
+            if(answer.size() <= 4){
+                this.fakeidD = answer.get(3).getIdAnswer();
+                this.answerD = answer.get(3).getAnswer();
+                this.isCorrectAnswerD = answer.get(3).getCorrect();
+            }else{
+                this.answerD = new String();
+                this.isCorrectAnswerD = 0;
+            }
 
-
-        this.fakeidC = answer.get(2).getIdAnswer();
-        this.answerC = answer.get(2).getAnswer();
-        this.isCorrectAnswerC = answer.get(2).getCorrect();
-
-
-        this.fakeidD = answer.get(3).getIdAnswer();
-        this.answerD = answer.get(3).getAnswer();
-        this.isCorrectAnswerD = answer.get(3).getCorrect();
-
-
-        this.fakeidE = answer.get(4).getIdAnswer();
-        this.answerE = answer.get(4).getAnswer();
-        this.isCorrectAnswerE = answer.get(4).getCorrect();
+            if(answer.size() <= 5){
+            this.fakeidE = answer.get(4).getIdAnswer();
+            this.answerE = answer.get(4).getAnswer();
+            this.isCorrectAnswerE = answer.get(4).getCorrect();
+            }else {
+                this.answerE = new String();
+                this.isCorrectAnswerE = 0;
+            }
+        }
 
         return this;
     }
